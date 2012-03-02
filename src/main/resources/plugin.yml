@@ -1,0 +1,13 @@
+name: HelpDemo
+version: 1.0
+main: com.ryanmichela.helpdemo.HelpPlugin
+
+commands:
+  foo:
+    description: Prints FOO to the screen.
+    usage: <command>
+    permission: help.foo
+
+  bar:
+    description:
+    usage:
