@@ -51,11 +51,14 @@ public class HelpPlugin extends JavaPlugin
         private OtherHelpTopic() {
             name = "Other";
             shortText = "This topic has no command";
-            fullText = "Sometimes you need a help topic for general info on how to use" +
-                    "your plugin. This could be paragraphs of text.\nNewlines are supported" +
-                    "and will automatically be inserted into the help output on the console" +
-                    "or the client. If your text is too long, it will be automatically paged.\n" +
-                    "Isn't that great?";
+            fullText = ChatColor.BLUE + "Sometimes you need a help topic for general info on how to use " +
+                    "your plugin. " + ChatColor.RED + " This could be paragraphs of text. " +
+                    ChatColor.GREEN + "Newlines are supported " +
+                    "and will automatically be inserted into the help output on the console " +
+                    "or the client. " + ChatColor.GRAY + "If your text is too long, it will be automatically paged. " +
+                    ChatColor.GOLD + "I could go on and on and on and on and on and on and on and on about how " +
+                    "great paragraphs of help text are, but I won't.\n" +
+                    ChatColor.MAGIC + "Isn't that great?";
         }
 
         @Override
