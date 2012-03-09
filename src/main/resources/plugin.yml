@@ -9,5 +9,7 @@ commands:
     permission: help.foo
 
   bar:
-    description:
-    usage:
+    permission:
+
+  baz:
+    description: The baz command
