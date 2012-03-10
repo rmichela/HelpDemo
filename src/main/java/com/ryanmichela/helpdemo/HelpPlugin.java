@@ -60,8 +60,12 @@ public class HelpPlugin extends JavaPlugin
 
         @Override
         public boolean canSee(CommandSender commandSender) {
-            return commandSender.hasPermission("help.bar") ||
-                    commandSender.hasPermission("help.cheese");
+            if (amendedPermission == null) {
+                return commandSender.hasPermission("help.bar") ||
+                        commandSender.hasPermission("help.cheese");
+            } else {
+                return commandSender.hasPermission(amendedPermission);
+            }
         }
     }
 
@@ -85,7 +89,11 @@ public class HelpPlugin extends JavaPlugin
 
         @Override
         public boolean canSee(CommandSender commandSender) {
-            return true;
+            if (amendedPermission == null) {
+                return true;
+            } else {
+                return commandSender.hasPermission(amendedPermission);
+            }
         }
     }
 
@@ -118,7 +126,11 @@ public class HelpPlugin extends JavaPlugin
 
         @Override
         public boolean canSee(CommandSender commandSender) {
-            return baseCommand.testPermissionSilent(commandSender);
+            if (amendedPermission == null) {
+                return baseCommand.testPermissionSilent(commandSender);
+            } else {
+                return commandSender.hasPermission(amendedPermission);
+            }
         }
     }
 
