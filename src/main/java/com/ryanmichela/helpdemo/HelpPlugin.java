@@ -79,7 +79,7 @@ public class HelpPlugin extends JavaPlugin
                     "and will automatically be inserted into the help output on the console " +
                     "or the client. " + ChatColor.GRAY + "If your text is too long, it will be automatically paged. " +
                     ChatColor.GOLD + "I could go on and on and on and on and on and on and on and on about how " +
-                    "great paragraphs of help text are, but I won't.\n" +
+                    "great paragraphs of help text are, but I won't.\n\n" +
                     ChatColor.MAGIC + "Isn't that great?";
         }
 

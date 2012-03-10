@@ -9,7 +9,7 @@ commands:
     permission: help.foo
 
   bar:
-    permission:
+    aliases: [bar2, bar3, bar4]
 
   baz:
     description: The baz command
